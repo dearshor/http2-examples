@@ -44,7 +44,7 @@ public class Http2Server {
         String bindAddress = System.getProperty("bind.address", "localhost");
         SSLContext sslContext = createSSLContext(loadKeyStore("server.keystore"), loadKeyStore("server.truststore"));
         Undertow server = Undertow.builder()
-                .setServerOption(UndertowOptions.ENABLE_HTTP2, true)
+                .setServerOption(UndertowOptions.ENABLE_HTTP2, false)
                 .addHttpsListener(8443, bindAddress, sslContext)
                 .setHandler(path)
                 .build();
