@@ -29,7 +29,8 @@ Notice
 
 This example was created using the the _http2_ example and the _servlet_ example in [undertow-io/undertow](https://github.com/undertow-io/undertow/tree/master/examples/src/main/java/io/undertow/examples).
 
-#### Test Result
+Test Result
+-----------
 ##### Benchmark settings
 ```bash
 # JMH 1.17.4 (released 34 days ago)
