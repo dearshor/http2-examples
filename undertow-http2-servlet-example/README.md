@@ -30,6 +30,20 @@ Notice
 This example was created using the the _http2_ example and the _servlet_ example in [undertow-io/undertow](https://github.com/undertow-io/undertow/tree/master/examples/src/main/java/io/undertow/examples).
 
 #### Test Result
+##### Benchmark settings
+```bash
+# JMH 1.17.4 (released 34 days ago)
+# VM version: JDK 1.8.0_45, VM 25.45-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: microbenchmark.Http2PerformenceTest.testHttp2Performence
+```
+
 ##### Use HTTP2 SERVER
 ```bash
 Result "microbenchmark.Http2PerformenceTest.testHttp2Performence":
